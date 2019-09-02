@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": []
+  },
+  "include": [
+    "../src/**/*.ts",
+    "../projects/app1/src/**/*.ts",
+    "../projects/app2/src/**/*.ts",
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "../projects/app1/src/**/*spec.ts",
+    "../projects/app2/src/**/*spec.ts",
+    "../projects/app1/src/app/app.module.ts",
+    "../projects/app2/src/app/app.module.ts",
+    "../projects/app1/src/main.ts",
+    "../projects/app2/src/main.ts",
+    "../projects/app2/src/test.ts",
+    "../projects/app2/src/test.ts",
+  ]
+}
